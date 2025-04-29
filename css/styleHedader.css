@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    background-color: #5B913B;
+    border-style: solid;
+    border-bottom-color: #D99D81;
+    border-bottom-width: 0.4em;
+}
+
+
+header h1,
+header button
+{
+    margin: 0 16%;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+header img {
+    width: 70%;
+    height: auto;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background-color: #FFE8B6;
+    border: 4px solid black;
+    border-radius: 50%;
+}
+
+header button{
+    background-color: #77B254;
+    border-radius: 30em;
+    border: solid 2px #5B913B;
+    font-size: 40px;
+}
+
+header a{
+    margin: 0 14.33%;
+    align-items: center;
+    font-size: x-large;
+}
+

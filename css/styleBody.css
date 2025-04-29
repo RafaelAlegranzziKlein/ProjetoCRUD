@@ -1,0 +1,83 @@
+body{
+    background-color: #FFE8B6;
+    font-family: Arial, sans-serif;
+}
+
+.fundo{
+    margin-left: 33px;
+    margin-top: 33px;
+    background-color: #5B913B;
+    width: 1650px;
+    height: 500px;
+    border-radius: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campos {
+display: flex;
+flex-direction: column;
+align-items: center;    
+width: 90%;
+}
+
+.campos label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+
+  .campos input{
+    margin-top: 5px;
+    width: 50%;
+    font-size: x-large;
+    border-radius: 33px;
+  }
+
+.botao{
+    display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.botao button , .botao a{
+    width: 13em;
+   font-size: x-large;
+    background-color: #77B254;
+    border-radius: 33px;
+}
+
+.container{
+ text-align: center;
+ margin: 22px;
+ 
+}
+
+#listagem-produtor{
+  background-color: #5B913B;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 22px;
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 42px;
+}
+button {
+  margin: 10px 155px;
+  }
+
+  .produtor-item{
+    text-align: center;
+    font-size: x-large;
+  }
+
+  h1{
+    font-size: xx-large;
+    margin-bottom: 22px;
+  }
+
