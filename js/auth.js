@@ -26,7 +26,7 @@ async function cadastradoUsuario(email, senha) {
         mensgemErro = "A senha deve ter pelo menos 6 caracteres.";
         break;
     }
-    throw { menssge: mensgemErro };
+    throw { message: mensgemErro };
   }
 }
 
@@ -62,26 +62,29 @@ if(btnCadastro) {
 
 
 //login
-
+//get
 const emailLoginInput = document.getElementById("email-login")
-const SenhaLoginInput = document.getElementById("senha-login")
+const senhaLoginInput = document.getElementById("senha-login")
 const btnLogin = document.getElementById("btn-login")
 const mensagemLogin = document.getElementById("mensagemLogin")
 
+//função de login de senha e email
 async function loginUsuario(email , senha) {
   try{
-    const userCredential = signInWithEmailAndPassword(auth , email ,senha);
+    const userCredential = await signInWithEmailAndPassword(auth , email ,senha);
     console.log(userCredential)
     return userCredential.user;
   }catch(error){
-    console.log("Erro 1")
+    console.log("Erro ao logar: ", error.code , error.message);
+    mensagemLogin.textContent = "Erro ao logar: " + error.message;
+    throw { message: "Erro ao logar: coloque email e senha corretos" };
   }
 }
 
 if(btnLogin){
   btnLogin.addEventListener('click' , async function () {
     const email = emailLoginInput.value;
-    const senha = SenhaLoginInput.value;
+    const senha = senhaLoginInput.value;
     mensagemLogin.textContent = '';
 
     if(!email || !senha){
@@ -94,7 +97,7 @@ if(btnLogin){
       console.log('usuario Logado: ' ,user);
       mensagemLogin.textContent="logado com sucesso"
       setTimeout (function(){
-        window.location.href = ('./update.html');
+        window.location.href = ('./menus.html');
       }, 3000);
     }catch(error){
     mensagemLogin.textContent = error.message  

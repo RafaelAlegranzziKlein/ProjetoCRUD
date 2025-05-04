@@ -324,3 +324,16 @@ h1 {
   font-weight: bolder;
   width:  25% ;
 }
+
+/* Menus */
+
+.fundo-menus{
+  margin: 3% auto;
+  background-color: #5B913B;
+  max-width: 75%;
+  padding: 2%;
+  border-radius: 333px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

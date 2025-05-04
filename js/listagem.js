@@ -16,7 +16,7 @@ async function BuscarProdutores() {
 const listarProdutoresDiv = document.getElementById("listagem-produtor");
 
 async function carregarListaProdutores() {
-  listarProdutoresDiv.innerHTML = "<p>carreganco lista de produtores ...</p>";
+  listarProdutoresDiv.innerHTML = "<p>carregando lista de produtores ...</p>";
   try {
     const produtores = await BuscarProdutores();
     console.log(produtores);
@@ -43,13 +43,13 @@ function renderizarListaDeProdutor(produtores) {
     produtorDiv.innerHTML = `
     
         <strong> Nome  : </strong>${produtor.nome}<br>
-        <strong> E-meil: </strong>${produtor.email}<br>
+        <strong> E-mail: </strong>${produtor.email}<br>
         <strong> Senha: </strong>${produtor.senha}<br>
         <strong> Telefone :</strong>${produtor.telefone}<br>
         <strong> CNPJ :</strong>${produtor.cnpj}<br>
         <div class="botao">
-           <Button class= "btn-Excluir" data-id = "${produtor.id}">Excluir</Button>
-           <Button class= "btn-Editar" data-id = "${produtor.id}">Editar</Button>
+           <button class= "btn-Excluir" data-id = "${produtor.id}">Excluir</button>
+           <button class= "btn-Editar" data-id = "${produtor.id}">Editar</button>
         </div>
         `;
         listarProdutoresDiv.appendChild(produtorDiv)
@@ -66,7 +66,7 @@ async function excluirProdutor(idprodutor) {
         await deleteDoc(deletarProdutor)
         console.log("Produtor com o id de : " +idprodutor + "foi excluído com sucesso")
         return true;
-    }catch{
+    }catch (erro){
         console.log("Erro ao excluir produtor : ",erro);
         alert("Ocorreu um erro ao deletar o produtor");
         return false;
@@ -162,7 +162,7 @@ document.getElementById('btn-salvar-edicao').addEventListener('click', async () 
         carregarListaProdutores();
     } catch (error) {
         console.log("Erro ao salvar edição:", error);
-        alert("Erro ao atualizar produtro.");
+        alert("Erro ao atualizar produtor.");
     }
 });
 document.getElementById('btn-cancelar-edicao').addEventListener('click', () => {
