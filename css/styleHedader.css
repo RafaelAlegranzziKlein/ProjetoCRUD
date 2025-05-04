@@ -7,17 +7,17 @@ header {
     border-style: solid;
     border-bottom-color: #D99D81;
     border-bottom-width: 0.4em;
+    padding-bottom: 1%;
 }
 
 
 header h1,
-header button
-{
-    margin-left: 15%;
-    margin-right: 15%;
+header button{
+    margin: 0 auto;
     align-items: center;
     font-size: x-large;
     font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 header img {
