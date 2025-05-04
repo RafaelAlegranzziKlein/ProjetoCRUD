@@ -1,5 +1,6 @@
 header {
     display: flex;
+    justify-content: space-between;
     font-family: Arial, sans-serif;
     align-items: center;
     background-color: #5B913B;
@@ -12,7 +13,8 @@ header {
 header h1,
 header button
 {
-    margin: 0 16%;
+    margin-left: 15%;
+    margin-right: 15%;
     align-items: center;
     font-size: x-large;
     font-weight: bolder;
@@ -40,11 +42,7 @@ header button{
     border-radius: 30em;
     border: solid 2px #5B913B;
     font-size: 40px;
-}
-
-header a{
-    margin: 0 14.33%;
-    align-items: center;
-    font-size: x-large;
+    display: flex;
+    
 }
 

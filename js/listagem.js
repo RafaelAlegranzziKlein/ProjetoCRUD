@@ -41,6 +41,7 @@ function renderizarListaDeProdutor(produtores) {
     const produtorDiv = document.createElement("div");
     produtorDiv.classList.add("produtor-item");
     produtorDiv.innerHTML = `
+    
         <strong> Nome  : </strong>${produtor.nome}<br>
         <strong> E-meil: </strong>${produtor.email}<br>
         <strong> Senha: </strong>${produtor.senha}<br>
