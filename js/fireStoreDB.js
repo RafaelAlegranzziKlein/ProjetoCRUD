@@ -9,14 +9,14 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAAijxDAA_gcZ4IvNoKKWw1b9xJn-Fpdyg",
-  authDomain: "projeto-crud-192a0.firebaseapp.com",
-  databaseURL: "https://projeto-crud-192a0-default-rtdb.firebaseio.com",
-  projectId: "projeto-crud-192a0",
-  storageBucket: "projeto-crud-192a0.firebasestorage.app",
-  messagingSenderId: "98343923637",
-  appId: "1:98343923637:web:6d8c95f42afb07dcae73fc",
-  measurementId: "G-9HBXB3X9SC"
+  apiKey: " ",
+  authDomain: " ",
+  databaseURL: " ",
+  projectId: " ",
+  storageBucket: " ",
+  messagingSenderId: " ",
+  appId: " ",
+  measurementId: " "
 };
 
 // Initialize o app
